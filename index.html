@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Black Dahlia Unisex Salon | Gothic-Luxe Salon in Andheri West, Mumbai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+:root{
+  --bg:#0B0B0B;
+  --bg2:#121212;
+  --bg3:#161616;
+  --card:#151515;
+  --card2:#1C1C1C;
+  --gold:#D4AF37;
+  --gold2:#F2D57E;
+  --gold3:#B8941F;
+  --gold-10:rgba(212,175,55,0.10);
+  --gold-20:rgba(212,175,55,0.20);
+  --gold-30:rgba(212,175,55,0.30);
+  --border:rgba(212,175,55,0.18);
+  --border2:rgba(212,175,55,0.35);
+  --text:#FFF8E7;
+  --muted:#9A9385;
+  --muted2:#6E685B;
+  --line:rgba(255,255,255,0.08);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:linear-gradient(180deg,#0B0B0B 0%, #111111 40%, #121212 100%);
+  color:var(--text);
+  font-family:'Inter',sans-serif;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{display:block;width:100%}
+button{font-family:inherit;cursor:pointer}
+.container{max-width:1240px;margin:0 auto;padding:0 20px}
+.gold{color:var(--gold)}
+/* announcement */
+.announce{
+  background:var(--gold);
+  color:#0B0B0B;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  display:flex;align-items:center;justify-content:center;gap:18px;
+  padding:8px 12px;
+  position:relative;z-index:60;
+}
+.announce span{display:flex;align-items:center;gap:8px}
+.announce .dot{width:7px;height:7px;background:#0B0B0B;border-radius:50%;animation:pulse 1.5s infinite}
+.announce b{font-family:'JetBrains Mono',monospace;letter-spacing:0.04em}
+.announce .hide-m{display:inline}
+@media(max-width:760px){.announce{font-size:10px;gap:10px;padding:7px 10px}.announce .hide-m{display:none}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
+/* header */
+.header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(11,11,11,0.82);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  height:72px;gap:20px;
+}
+.logo{
+  display:flex;align-items:center;gap:12px;
+}
+.logo-mark{
+  width:42px;height:42px;border:1px solid var(--gold);display:grid;place-items:center;
+  background:rgba(212,175,55,0.08);position:relative;
+  box-shadow:0 0 18px rgba(212,175,55,0.18);
+}
+.logo-mark i{color:var(--gold);font-size:16px}
+.logo-text h1{
+  font-family:'Playfair Display',serif;font-weight:800;letter-spacing:0.14em;font-size:15px;line-height:1;
+}
+.logo-text p{font-size:9px;letter-spacing:0.28em;color:var(--gold);margin-top:3px;font-weight:600}
+.nav{display:flex;align-items:center;gap:28px}
+.nav a{font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);font-weight:600;transition:.2s}
+.nav a:hover,.nav a.active{color:var(--text)}
+.nav a.active{color:var(--gold);border-bottom:1px solid var(--gold);padding-bottom:2px}
+.header-actions{display:flex;align-items:center;gap:14px}
+.loc-toggle{
+  display:flex;align-items:center;gap:8px;
+  border:1px solid var(--border);padding:8px 14px;background:rgba(255,255,255,0.03);
+  font-size:11px;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;color:var(--text);
+  position:relative;
+}
+.loc-toggle i{color:var(--gold);font-size:11px}
+.loc-dropdown{
+  position:absolute;top:calc(100% + 8px);right:0;min-width:260px;
+  background:#1A1A1A;border:1px solid var(--border2);padding:8px;display:none;z-index:70;
+  box-shadow:0 20px 40px rgba(0,0,0,0.6);
+}
+.loc-dropdown.open{display:block}
+.loc-option{padding:12px;display:flex;gap:10px;align-items:center;cursor:pointer;border:1px solid transparent;transition:.2s}
+.loc-option:hover{background:rgba(212,175,55,0.07);border-color:var(--border)}
+.loc-option i{color:var(--gold)}
+.loc-option strong{font-size:12px;display:block}
+.loc-option span{font-size:11px;color:var(--muted)}
+.hotline{display:flex;align-items:center;gap:10px;font-size:11px;color:var(--muted)}
+.hotline b{color:var(--text);font-size:12px}
+.btn-gold{
+  background:linear-gradient(135deg,#D4AF37 0%,#C19A2E 50%,#B8941F 100%);
+  color:#0B0B0B;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;
+  font-size:12px;padding:13px 20px;border:none;
+  box-shadow:0 6px 24px rgba(212,175,55,0.35), inset 0 1px 0 rgba(255,255,255,0.4);
+  transition:.2s;display:inline-flex;align-items:center;gap:8px;white-space:nowrap;
+}
+.btn-gold:hover{transform:translateY(-1px);box-shadow:0 10px 30px rgba(212,175,55,0.45)}
+.btn-outline{
+  border:1px solid var(--border2);background:transparent;color:var(--text);
+  padding:12px 18px;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;font-weight:700;
+  display:inline-flex;align-items:center;gap:8px;transition:.2s;
+}
+.btn-outline:hover{border-color:var(--gold);background:var(--gold-10)}
+.hamburger{display:none;width:42px;height:42px;border:1px solid var(--border);background:transparent;color:var(--text);font-size:18px}
+@media(max-width:1050px){
+  .nav{display:none}
+  .hotline{display:none}
+  .hamburger{display:grid;place-items:center}
+  .header-actions .btn-gold{padding:10px 14px;font-size:11px}
+}
+@media(max-width:560px){
+  .loc-toggle span.txt{display:none}
+  .header-inner{height:64px}
+  .logo-text h1{font-size:13px}
+}
+/* mobile nav */
+.mobile-nav{
+  display:none;position:fixed;inset:72px 0 0 0;background:rgba(11,11,11,0.98);z-index:49;padding:28px;backdrop-filter:blur(10px);
+}
+.mobile-nav.open{display:block}
+.mobile-nav a{display:block;padding:16px 0;border-bottom:1px solid var(--line);letter-spacing:0.12em;text-transform:uppercase;font-size:13px;font-weight:600;color:var(--muted)}
+.mobile-nav a:last-child{border:none}
+/* hero */
+.hero{
+  padding:28px 0 0 0;position:relative;overflow:hidden;
+}
+.hero-grid{
+  display:grid;grid-template-columns:1.05fr 0.95fr;gap:32px;align-items:center;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  border:1px solid var(--border);padding:6px 10px;background:rgba(212,175,55,0.06);
+  font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold2);font-weight:700;
+}
+.eyebrow i{font-size:8px}
+.hero h2{
+  font-family:'Playfair Display',serif;font-size:58px;line-height:0.95;font-weight:700;margin:18px 0 14px 0;
+  letter-spacing:-0.02em;
+}
+.hero h2 em{font-family:'Cormorant Garamond',serif;font-weight:300;font-style:italic;color:var(--gold2)}
+.hero p.lead{color:var(--muted);font-size:15px;line-height:1.7;max-width:520px}
+.hero-ctas{display:flex;gap:12px;margin:22px 0 18px 0;flex-wrap:wrap}
+.trust-row{display:flex;align-items:center;gap:18px;margin-top:18px;flex-wrap:wrap}
+.stars{color:var(--gold);font-size:13px;letter-spacing:2px}
+.trust-row small{font-size:11px;color:var(--muted);line-height:1.4}
+.trust-row small b{color:var(--text)}
+.hero-visual{
+  position:relative;padding:14px;
+}
+.arch-frame{
+  position:relative;
+  border:1px solid var(--gold);
+  padding:10px;
+  background:linear-gradient(180deg,rgba(212,175,55,0.12),transparent);
+  box-shadow:0 0 40px rgba(212,175,55,0.18), inset 0 0 0 1px rgba(212,175,55,0.2);
+}
+.arch-inner{
+  position:relative;height:520px;overflow:hidden;
+  clip-path: path("M 0 180 C 0 80 60 0 150 0 C 240 0 300 80 300 180 L 300 520 L 0 520 Z");
+  /* fallback */
+  border-radius:180px 180px 6px 6px;
+  background:#000;
+}
+.arch-inner img{height:100%;object-fit:cover;filter:contrast(1.05) saturate(1.05)}
+.jaali{
+  position:absolute;inset:0;pointer-events:none;opacity:0.18;
+  background-image:radial-gradient(circle at 1px 1px, #D4AF37 1px, transparent 0);
+  background-size:12px 12px;
+  mask:linear-gradient(to bottom, black 60%, transparent);
+}
+.float-card{
+  position:absolute;background:#151515;border:1px solid var(--border2);
+  padding:12px 14px;display:flex;align-items:center;gap:12px;
+  box-shadow:0 12px 30px rgba(0,0,0,0.5), 0 0 20px rgba(212,175,55,0.15);
+}
+.float-card.tl{top:22px;left:-14px}
+.float-card.br{bottom:28px;right:-6px}
+.float-card .icon{width:36px;height:36px;background:var(--gold);display:grid;place-items:center;color:#0B0B0B}
+.float-card strong{font-size:12px;display:block}
+.float-card span{font-size:11px;color:var(--muted)}
+.live-dot{width:8px;height:8px;background:#00D26A;border-radius:50%;box-shadow:0 0 10px #00D26A;animation:pulse 1.2s infinite}
+@media(max-width:980px){
+  .hero-grid{grid-template-columns:1fr;gap:18px}
+  .hero h2{font-size:40px}
+  .arch-inner{height:420px}
+  .float-card.tl{left:6px;top:10px}
+  .float-card.br{right:6px}
+}
+@media(max-width:560px){
+  .hero h2{font-size:34px}
+  .hero-ctas .btn-gold,.hero-ctas .btn-outline{flex:1;justify-content:center}
+  .arch-inner{height:380px}
+}
+/* stats bar */
+.stats-bar{
+  margin-top:18px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  background:rgba(255,255,255,0.02);display:grid;grid-template-columns:repeat(4,1fr);
+}
+.stat{padding:18px 20px;text-align:center;border-right:1px solid var(--line)}
+.stat:last-child{border:none}
+.stat strong{font-family:'Playfair Display',serif;font-size:22px;display:block}
+.stat span{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);font-weight:700}
+@media(max-width:700px){.stats-bar{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:none}.stat{border-bottom:1px solid var(--line)}}
+/* services */
+.section{padding:54px 0}
+.section-head{text-align:center;max-width:720px;margin:0 auto 26px auto}
+.section-head .eyebrow{margin:0 auto}
+.section-head h3{
+  font-family:'Playfair Display',serif;font-size:38px;margin:14px 0 10px 0;font-weight:700;letter-spacing:-0.02em
+}
+.section-head p{color:var(--muted);font-size:13px;line-height:1.6}
+.live-bar{
+  border:1px solid var(--border2);background:linear-gradient(90deg, rgba(212,175,55,0.12), rgba(212,175,55,0.02));
+  display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px;margin:0 0 14px 0;flex-wrap:wrap;
+  box-shadow:0 0 18px rgba(212,175,55,0.12);
+}
+.live-left{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase}
+.live-left .pill{border:1px solid var(--gold);padding:4px 8px;display:inline-flex;align-items:center;gap:6px;background:rgba(212,175,55,0.12);font-size:10px}
+.countdown{font-family:'JetBrains Mono',monospace;background:#0B0B0B;border:1px solid var(--border);padding:6px 10px;font-size:12px;display:flex;align-items:center;gap:8px}
+.countdown b{color:var(--gold2)}
+.tabs{
+  display:flex;gap:8px;justify-content:center;margin:18px 0 22px 0;flex-wrap:wrap;
+}
+.tab{
+  padding:10px 18px;border:1px solid var(--border);background:rgba(255,255,255,0.02);
+  font-size:11px;letter-spacing:0.14em;text-transform:uppercase;font-weight:800;color:var(--muted);transition:.2s;
+}
+.tab.active{background:var(--gold);color:#0B0B0B;border-color:var(--gold);box-shadow:0 6px 18px rgba(212,175,55,0.3)}
+.service-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:14px;
+}
+.service-card{
+  background:var(--card);border:1px solid var(--border);padding:18px;position:relative;transition:.2s;
+  display:flex;flex-direction:column;gap:12px;
+}
+.service-card:hover{border-color:var(--border2);transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,0.5), 0 0 18px rgba(212,175,55,0.10)}
+.service-card .svc-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.service-card h4{font-family:'Playfair Display',serif;font-size:15px;line-height:1.3}
+.service-card h4 span{display:block;font-family:'Inter',sans-serif;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-top:4px;font-weight:800}
+.service-card p{font-size:12px;color:var(--muted);line-height:1.6;min-height:38px}
+.meta{display:flex;align-items:center;gap:10px;font-size:11px;color:var(--muted)}
+.meta i{color:var(--gold);font-size:11px}
+.price-row{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:12px;border-top:1px solid var(--line)}
+.price{font-family:'Playfair Display',serif;font-size:18px;font-weight:700}
+.price small{font-family:'Inter',sans-serif;font-size:11px;color:var(--muted);text-decoration:line-through;margin-left:6px;font-weight:500}
+.add-btn{
+  background:transparent;border:1px solid var(--gold);color:var(--gold);padding:8px 12px;
+  font-size:10px;letter-spacing:0.12em;text-transform:uppercase;font-weight:800;transition:.2s;
+}
+.add-btn:hover{background:var(--gold);color:#0B0B0B}
+.add-btn.added{background:var(--gold);color:#0B0B0B}
+@media(max-width:980px){.service-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.service-grid{grid-template-columns:1fr}.section-head h3{font-size:28px}}
+/* gallery */
+.gallery{padding:48px 0;background:radial-gradient(600px 300px at 50% 0%, rgba(212,175,55,0.06), transparent)}
+.gallery-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:18px;flex-wrap:wrap}
+.gallery-head h3{font-family:'Playfair Display',serif;font-size:34px}
+.gallery-head p{color:var(--muted);font-size:12px;max-width:420px;line-height:1.6}
+.masonry{
+  column-count:3;column-gap:14px;
+}
+.m-item{
+  break-inside:avoid;margin-bottom:14px;position:relative;overflow:hidden;
+  border:1px solid var(--border);background:#000;
+  box-shadow:0 8px 24px rgba(0,0,0,0.5);
+}
+.m-item img{transition:transform .6s, filter .4s;filter:saturate(1.05) contrast(1.05)}
+.m-item:hover img{transform:scale(1.05)}
+.m-item::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 55%);
+  opacity:0;transition:.3s;
+}
+.m-item:hover::after{opacity:1}
+.m-cap{
+  position:absolute;bottom:0;left:0;right:0;padding:12px;z-index:2;
+  transform:translateY(6px);opacity:0;transition:.3s;
+}
+.m-item:hover .m-cap{transform:translateY(0);opacity:1}
+.m-cap strong{font-size:11px;letter-spacing:0.12em;text-transform:uppercase;display:block}
+.m-cap span{font-size:11px;color:rgba(255,255,255,0.75)}
+@media(max-width:900px){.masonry{column-count:2}}
+@media(max-width:560px){.masonry{column-count:1}.gallery-head h3{font-size:28px}}
+/* locations */
+.locations{padding:48px 0}
+.loc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:18px}
+.loc-card{
+  background:var(--card);border:1px solid var(--border);overflow:hidden;position:relative;
+}
+.loc-card:hover{border-color:var(--border2);box-shadow:0 0 24px rgba(212,175,55,0.12)}
+.loc-img{height:180px;overflow:hidden;position:relative;background:#000}
+.loc-img img{height:100%;object-fit:cover;opacity:0.9}
+.loc-badge{
+  position:absolute;top:12px;left:12px;background:var(--gold);color:#0B0B0B;
+  font-size:10px;letter-spacing:0.12em;text-transform:uppercase;font-weight:800;padding:6px 8px;
+}
+.loc-body{padding:16px}
+.loc-body h4{font-family:'Playfair Display',serif;font-size:18px;display:flex;align-items:center;gap:8px}
+.loc-body h4 i{color:var(--gold);font-size:14px}
+.addr{font-size:12px;color:var(--muted);line-height:1.6;margin:8px 0 10px 0}
+.hours{
+  border:1px solid var(--border);background:rgba(255,255,255,0.02);
+  display:flex;align-items:center;justify-content:space-between;padding:8px 10px;font-size:11px;margin-bottom:12px;
+}
+.hours b{color:#00D26A;display:flex;align-items:center;gap:6px}
+.hours b::before{content:"";width:6px;height:6px;background:#00D26A;border-radius:50%;box-shadow:0 0 8px #00D26A}
+.loc-actions{display:flex;gap:8px;flex-wrap:wrap}
+.loc-actions .btn-gold{flex:1;justify-content:center;padding:11px 12px;font-size:11px}
+.loc-actions .btn-outline{flex:1;justify-content:center}
+.map-link{
+  display:flex;align-items:center;gap:6px;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--gold);font-weight:800;margin-top:10px;
+}
+@media(max-width:820px){.loc-grid{grid-template-columns:1fr}.loc-img{height:200px}}
+/* testimonials */
+.testimonials{padding:48px 0;background:linear-gradient(180deg, rgba(212,175,55,0.04), transparent);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+.quote-card{
+  background:var(--card);border:1px solid var(--border);padding:18px;position:relative;
+}
+.quote-card::before{
+  content:"“";position:absolute;top:8px;right:14px;font-family:'Playfair Display',serif;font-size:52px;line-height:1;color:rgba(212,175,55,0.12);
+}
+.quote-top{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.avatar{width:42px;height:42px;border-radius:50%;overflow:hidden;border:1px solid var(--border2)}
+.avatar img{height:100%;object-fit:cover}
+.quote-top strong{font-size:12px;display:block}
+.quote-top span{font-size:11px;color:var(--muted)}
+.stars-sm{color:var(--gold);font-size:11px;letter-spacing:1px;margin-bottom:8px}
+.quote-card p{font-size:12px;color:#D8D0BC;line-height:1.7;font-style:italic}
+.quote-card .stylist{
+  margin-top:12px;display:inline-flex;align-items:center;gap:6px;
+  border:1px solid var(--border);padding:5px 8px;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;font-weight:700;color:var(--gold);
+  background:rgba(212,175,55,0.06)
+}
+@media(max-width:900px){.test-grid{grid-template-columns:1fr}.quote-card p{font-size:13px}}
+/* footer */
+.footer{
+  padding:34px 0 24px 0;background:#080808;border-top:1px solid var(--border);
+}
+.footer-grid{display:grid;grid-template-columns:1.4fr 0.8fr 0.8fr 1fr;gap:22px}
+.footer h5{font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.footer p,.footer a{font-size:12px;color:var(--muted);line-height:1.7}
+.footer a:hover{color:var(--text)}
+.footer-col ul{list-style:none}
+.footer-col ul li{margin:6px 0}
+.copy{
+  margin-top:22px;padding-top:18px;border-top:1px solid var(--line);
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:11px;color:var(--muted2)
+}
+@media(max-width:900px){.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.footer-grid{grid-template-columns:1fr}}
+/* whatsapp widget */
+.wa-wrap{
+  position:fixed;bottom:18px;right:18px;z-index:60;display:flex;flex-direction:column;align-items:end;gap:10px;
+}
+.wa-bubble{
+  background:#151515;border:1px solid var(--border2);padding:10px 12px;max-width:300px;
+  box-shadow:0 12px 30px rgba(0,0,0,0.6), 0 0 20px rgba(212,175,55,0.12);
+  display:flex;align-items:center;gap:10px;transform:translateY(10px);opacity:0;pointer-events:none;transition:.25s;
+}
+.wa-bubble.open{transform:translateY(0);opacity:1;pointer-events:auto}
+.wa-bubble .wa-icon{width:36px;height:36px;background:#25D366;display:grid;place-items:center;color:#fff;font-size:18px;flex-shrink:0}
+.wa-bubble strong{font-size:11px;letter-spacing:0.08em;text-transform:uppercase;display:block}
+.wa-bubble p{font-size:11px;color:var(--muted);line-height:1.4;margin-top:2px}
+.wa-actions{display:flex;gap:8px;margin-top:8px}
+.wa-actions button{flex:1}
+.wa-btn{
+  width:56px;height:56px;border-radius:50%;background:#25D366;border:none;color:#fff;font-size:26px;
+  display:grid;place-items:center;box-shadow:0 10px 30px rgba(37,211,102,0.45);position:relative;
+}
+.wa-btn::after{
+  content:"";position:absolute;inset:-6px;border-radius:50%;border:1px solid rgba(37,211,102,0.35);animation:ping 1.8s infinite;
+}
+@keyframes ping{0%{transform:scale(0.9);opacity:1}100%{transform:scale(1.2);opacity:0}}
+.wa-label{
+  position:absolute;right:66px;top:50%;transform:translateY(-50%);
+  background:#0B0B0B;border:1px solid var(--border);padding:8px 10px;white-space:nowrap;
+  font-size:11px;font-weight:700;letter-spacing:0.06em;box-shadow:0 8px 20px rgba(0,0,0,0.5);
+  display:flex;align-items:center;gap:8px;
+}
+.wa-label span{width:8px;height:8px;background:#00D26A;border-radius:50%;box-shadow:0 0 8px #00D26A;display:inline-block}
+@media(max-width:560px){.wa-label{display:none}}
+/* modal */
+.modal{
+  position:fixed;inset:0;background:rgba(0,0,0,0.72);backdrop-filter:blur(6px);
+  display:none;align-items:center;justify-content:center;padding:16px;z-index:80;
+}
+.modal.open{display:flex}
+.modal-card{
+  background:#131313;border:1px solid var(--border2);max-width:860px;width:100%;max-height:92vh;overflow:auto;
+  box-shadow:0 30px 80px rgba(0,0,0,0.8), 0 0 40px rgba(212,175,55,0.15);
+  display:grid;grid-template-columns:1.1fr 0.9fr;
+}
+.modal-head{
+  padding:18px 18px 0 18px;display:flex;justify-content:space-between;align-items:start;gap:12px;grid-column:1/-1;
+}
+.modal-head h3{font-family:'Playfair Display',serif;font-size:22px}
+.modal-head p{font-size:11px;color:var(--muted);margin-top:4px}
+.close-btn{width:36px;height:36px;border:1px solid var(--border);background:transparent;color:var(--text);display:grid;place-items:center}
+.modal-left{padding:18px;border-right:1px solid var(--line)}
+.modal-right{padding:18px;background:rgba(255,255,255,0.02)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.form-grid .full{grid-column:1/-1}
+.field label{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);font-weight:700;display:block;margin-bottom:6px}
+.field input,.field select{
+  width:100%;background:#0E0E0E;border:1px solid var(--border);color:var(--text);padding:11px 12px;font-size:13px;outline:none;transition:.2s;
+}
+.field input:focus,.field select:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(212,175,55,0.12)}
+.pay-tabs{display:flex;gap:8px;margin:12px 0}
+.pay-tab{flex:1;padding:10px;border:1px solid var(--border);background:rgba(255,255,255,0.02);font-size:11px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;justify-content:center;gap:8px}
+.pay-tab.active{background:var(--gold);color:#0B0B0B;border-color:var(--gold)}
+.pay-panel{display:none}
+.pay-panel.active{display:block}
+.order-list{border:1px solid var(--border);background:#0E0E0E;padding:12px;margin-top:12px}
+.order-item{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid var(--line);font-size:12px}
+.order-item:last-child{border:none}
+.order-total{display:flex;justify-content:space-between;align-items:center;padding-top:10px;margin-top:10px;border-top:1px solid var(--border2);font-weight:800}
+.order-total span:last-child{color:var(--gold);font-family:'Playfair Display',serif;font-size:18px}
+.secure{font-size:10px;color:var(--muted);display:flex;align-items:center;gap:6px;justify-content:center;margin-top:10px;letter-spacing:0.08em;text-transform:uppercase}
+@media(max-width:780px){
+  .modal-card{grid-template-columns:1fr;max-height:95vh}
+  .modal-left{border-right:none;border-bottom:1px solid var(--line)}
+  .form-grid{grid-template-columns:1fr}
+}
+/* toast */
+.toast{
+  position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(20px);
+  background:#151515;border:1px solid var(--border2);padding:12px 16px;
+  display:flex;align-items:center;gap:10px;opacity:0;pointer-events:none;transition:.3s;z-index:90;
+  box-shadow:0 12px 30px rgba(0,0,0,0.6);font-size:12px;max-width:92vw;
+}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.toast i{color:var(--gold)}
+</style>
+</head>
+<body>
+
+<div class="announce">
+  <span><span class="dot"></span> Flash: 35% Off on First Visit <span class="hide-m">• Valid Today Only</span></span>
+  <span style="gap:6px">Ends in <b id="announceTimer">02:14:33</b> <span class="hide-m">• Auto-applied at checkout</span></span>
+  <span class="hide-m" style="border-left:1px solid rgba(0,0,0,0.2);padding-left:14px"><i class="fa-solid fa-bolt"></i> Instant Booking</span>
+</div>
+
+<header class="header">
+  <div class="container header-inner">
+    <div class="logo">
+      <div class="logo-mark"><i class="fa-solid fa-dharmachakra"></i></div>
+      <div class="logo-text">
+        <h1>THE BLACK DAHLIA</h1>
+        <p>UNISEX SALON</p>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#home" class="active">Home</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#locations">Locations</a>
+      <a href="#reviews">Reviews</a>
+    </nav>
+
+    <div class="header-actions">
+      <div style="position:relative">
+        <button class="loc-toggle" id="locToggle">
+          <i class="fa-solid fa-location-dot"></i> <span class="txt">Andheri West</span> <i class="fa-solid fa-chevron-down" style="font-size:9px;color:var(--muted)"></i>
+        </button>
+        <div class="loc-dropdown" id="locDropdown">
+          <div class="loc-option" data-loc="Millat Nagar">
+            <i class="fa-solid fa-store"></i>
+            <div><strong>Millat Nagar Outlet</strong><span>Near Millat Circle • 10AM - 9:30PM</span></div>
+          </div>
+          <div class="loc-option" data-loc="Lokhandwala">
+            <i class="fa-solid fa-store"></i>
+            <div><strong>Lokhandwala Complex</strong><span>Above Natural Ice Cream • 10AM - 9:30PM</span></div>
+          </div>
+          <div style="padding:8px 8px 0 8px"><button class="btn-gold" style="width:100%;justify-content:center;padding:10px" onclick="document.getElementById('locDropdown').classList.remove('open')">Confirm Area</button></div>
+        </div>
+      </div>
+
+      <div class="hotline">
+        <i class="fa-solid fa-phone" style="color:var(--gold)"></i>
+        <div>
+          <div style="font-size:10px;letter-spacing:0.12em;text-transform:uppercase;font-weight:700">Hotline</div>
+          <b>+91 81045 67290</b>
+        </div>
+      </div>
+
+      <button class="btn-gold" onclick="openBooking()">Claim 35% Off <i class="fa-solid fa-arrow-right"></i></button>
+      <button class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#home" onclick="closeMobile()">Home</a>
+    <a href="#services" onclick="closeMobile()">Services</a>
+    <a href="#gallery" onclick="closeMobile()">Gallery</a>
+    <a href="#locations" onclick="closeMobile()">Locations</a>
+    <a href="#reviews" onclick="closeMobile()">Reviews</a>
+    <div style="margin-top:18px;display:flex;gap:10px">
+      <button class="btn-gold" style="flex:1;justify-content:center" onclick="openBooking();closeMobile()">Book Now — 35% Off</button>
+      <a href="tel:+918104567290" class="btn-outline" style="flex:1;justify-content:center"><i class="fa-solid fa-phone"></i> Call</a>
+    </div>
+    <p style="font-size:11px;color:var(--muted);margin-top:14px;line-height:1.6">Millat Nagar & Lokhandwala Complex • Open Daily 10AM - 9:30PM</p>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow"><i class="fa-solid fa-sparkles"></i> Andheri West's Most Coveted Gothic-Luxe Atelier</div>
+      <h2>Weightless<br>Beauty,<br><em>Weighty Elegance.</em></h2>
+      <p class="lead">Step beneath perforated brass jaali arches and crystal brass chandeliers. The Black Dahlia fuses modern geometry with velvet noir — where every cut, color and glow is precision-lit.</p>
+      <div class="hero-ctas">
+        <button class="btn-gold" onclick="openBooking()">Claim 35% Off Instant Booking Slot <i class="fa-solid fa-bolt"></i></button>
+        <a href="#services" class="btn-outline"><i class="fa-regular fa-gem"></i> Explore Treatments</a>
+      </div>
+      <div class="trust-row">
+        <div style="display:flex;align-items:center;gap:10px">
+          <img src="https://i.pravatar.cc/80?img=12" style="width:36px;height:36px;border-radius:50%;border:1px solid var(--gold)">
+          <img src="https://i.pravatar.cc/80?img=32" style="width:36px;height:36px;border-radius:50%;border:1px solid var(--gold);margin-left:-10px">
+          <img src="https://i.pravatar.cc/80?img=15" style="width:36px;height:36px;border-radius:50%;border:1px solid var(--gold);margin-left:-10px">
+          <span style="width:36px;height:36px;border-radius:50%;background:var(--gold);color:#0B0B0B;display:grid;place-items:center;font-weight:800;font-size:11px;margin-left:-10px;border:1px solid var(--gold)">+2k</span>
+        </div>
+        <div>
+          <div class="stars">★★★★★ <span style="color:var(--text);font-size:11px;letter-spacing:0">4.9/5</span></div>
+          <small><b>2,847+ Andheri clients</b> trust Haroon, Aalam & Farid • Google Verified</small>
+        </div>
+      </div>
+      <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
+        <span style="font-size:10px;letter-spacing:0.12em;text-transform:uppercase;border:1px solid var(--border);padding:6px 10px;color:var(--muted);font-weight:700"><i class="fa-solid fa-shield-halved" style="color:var(--gold)"></i> Hygienic • Single-use kits</span>
+        <span style="font-size:10px;letter-spacing:0.12em;text-transform:uppercase;border:1px solid var(--border);padding:6px 10px;color:var(--muted);font-weight:700"><i class="fa-solid fa-certificate" style="color:var(--gold)"></i> L'Oréal • Schwarzkopf Pro</span>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="arch-frame">
+        <div class="arch-inner">
+          <img src="https://www.designarena.ai/u/dc19cd71-572e-402c-92e2-286ea6cd9352" alt="The Black Dahlia salon exterior with jaali arch">
+          <div class="jaali"></div>
+        </div>
+      </div>
+      <div class="float-card tl">
+        <div class="icon"><i class="fa-regular fa-clock"></i></div>
+        <div>
+          <strong>Next Slot <span style="color:#00D26A">in 25 mins</span></strong>
+          <span id="seatFloat">Millat Nagar: 3 chairs • Lokhandwala: 4 chairs</span>
+        </div>
+        <span class="live-dot"></span>
+      </div>
+      <div class="float-card br">
+        <img src="https://www.designarena.ai/u/023c4ee2-f11b-4b8b-97bb-403570a4386f" style="width:54px;height:54px;object-fit:cover;border:1px solid var(--gold)">
+        <div>
+          <strong>Signature Balayage</strong>
+          <span>From ₹4,999 • 35% Off Today</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding:0">
+    <div class="stats-bar">
+      <div class="stat"><strong>12+</strong><span>Years Artistry</span></div>
+      <div class="stat"><strong>15k+</strong><span>Transformations</span></div>
+      <div class="stat"><strong>4.9 ★</strong><span>Google Rating</span></div>
+      <div class="stat"><strong>02 Outlets</strong><span>Andheri West</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow"><i class="fa-solid fa-wand-magic-sparkles"></i> Interactive Glossary • Real-Time Pricing</div>
+      <h3>Treatments Crafted<br><span style="color:var(--gold);font-family:'Cormorant Garamond',serif;font-weight:300;font-style:italic">Like High Jewellery</span></h3>
+      <p>Transparent pricing, precise durations, and stylist-matched artistry. All prices include 35% instant booking discount when you reserve online.</p>
+    </div>
+
+    <div class="live-bar">
+      <div class="live-left">
+        <span class="pill"><span class="live-dot" style="width:6px;height:6px"></span> Live Seat Tracker</span>
+        <span id="seatIndicator">Millat Nagar: <b style="color:#00D26A">2 Chairs Free</b> • Lokhandwala: <b style="color:#00D26A">4 Chairs Free</b> • Updated just now</span>
+      </div>
+      <div class="countdown"><i class="fa-solid fa-stopwatch" style="color:var(--gold)"></i> Offer ends in <b id="countdown">02:14:31</b> <span style="background:var(--gold);color:#0B0B0B;padding:2px 6px;font-size:10px;font-weight:800;letter-spacing:0.08em">35% OFF LOCKED</span></div>
+    </div>
+
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-tab="hair" onclick="switchTab('hair')"><i class="fa-solid fa-scissors"></i> Hair Artistry</button>
+      <button class="tab" data-tab="skin" onclick="switchTab('skin')"><i class="fa-regular fa-face-smile"></i> Skincare</button>
+      <button class="tab" data-tab="nail" onclick="switchTab('nail')"><i class="fa-regular fa-hand-sparkles"></i> Nail Atelier</button>
+    </div>
+
+    <!-- Hair -->
+    <div id="tab-hair" class="service-grid">
+      <div class="service-card">
+        <div class="svc-top">
+          <h4>Precision Layered Haircut <span>Signature • Aalam Recommended</span></h4>
+          <span style="background:var(--gold);color:#0B0B0B;font-size:9px;font-weight:800;letter-spacing:0.1em;padding:4px 6px;white-space:nowrap">BESTSELLER</span>
+        </div>
+        <p>Face-framing layers, texturized movement & blow-dry finish. Consultation + wash included.</p>
+        <div class="meta"><span><i class="fa-regular fa-clock"></i> 45 mins</span> <span>• Unisex</span> <span>• Haroon / Aalam</span></div>
+        <div class="price-row"><div class="price">₹999 <small>₹1,499</small></div><button class="add-btn" onclick="addService(this,'Precision Haircut',999)">Add +</button></div>
+      </div>
+      <div class="service-card">
+        <div class="svc-top"><h4>Global Hair Color <span>Ammonia-free • L'Oréal Majirel</span></h4></div>
+        <p>Full coverage, lustrous fade-resistant tone with Olaplex bond protection.</p>
+        <div class="meta"><span><i class="fa-regular fa-clock"></i> 90 mins</span> <span>• Patch test 24h prior</span></div>
+        <div class="price-row"><div class="price">₹2,999 <small>₹4,599</small></div><button class="add-btn" onclick="addService(this,'Global Hair Color',2999)">Add +</button></div>
+      </div>
+      <div class="service-card">
+        <div class="svc-top"><h4>Balayage / French Highlights <span>Hand-painted • Farid Artistry</span></h4></div>
+        <p>Sun-kissed dimension with feathered root melt. Includes toner + ritual treatment.</p>
+        <div class="meta"><span><i class="fa-regular fa-clock"></i> 180 mins</span> <span>• Consultation must</span></div>
+        <div class="price-row"><div class="price">₹6,499 <small>₹9,999</small></div><button class="add-btn" onclick="addService(this,'Balayage Highlights',6499)">Add +</button></div>
+      </div>
+      <div class="service-card">
+        <div class="svc-top"><h4>Keratin Botox Ritual <span>Frizz-free 5 months</span></h4></div>
+        <p>Cysteine + keratin infusion for glass-smooth, humidity-proof shine.</p>
+        <div class="meta"><span><i class="fa-regular fa-clock"></i> 150 mins</span></div>
+        <div class="price-row"><div class="price">₹4,999 <small>₹7,999</small></div><button class="add-btn" onclick="addService(this,'Keratin Botox',4999)">Add +</button></div>
+      </div>
+      <div class="service-card">
+        <div class="svc-top"><h4>Scalp Detox + Hair Spa <span>Anti-hairfall</span></h4></div>
+        <p>Exfoliating scrub, steam infusion & massage to reboot growth.</p>
+        <div class="meta"><span><i class="fa-regular fa-clock"></i> 60 mins</span></div>
+        <div class="price-row"><div class="price">₹1,499 <small>₹2,199</small></div><button class="add-btn" onclick="addService(this,'Hair Spa Ritual',1499)">Add +</button></div>
+      </div>
+      <div class="service-card" style="border-style:dashed">
+        <div class="svc-top"><h4>Groom's Power Cut + Beard Sculpt <span>For him</span></h4></div>
+        <p>Fades, texture & straight-razor beard line-up with hot towel.</p>
+        <div class="meta"><span><i class="fa-regular fa-clock"></i> 50 mins</span></div>
+        <div class="price-row"><div class="price">₹899 <small>₹1,299</small></div><button class="add-btn" onclick="addService(this,'Power Cut + Beard',899)">Add +</button></div>
+      </div>
+    </div>
+
+    <!-- Skin -->
+    <div id="tab-skin" class="service-grid" style="display:none">
+      <div class="service-card">
+        <div class="svc-top"><h4>HydraGlow Oxygen Facial <span>Instant plump</span></h4></div>
+        <p>O2 infusion + hyaluronic press for dewy, photo-ready skin. No downtime.</p>
+        <div class="meta"><span><i class="fa-regular fa-clock"></i> 60 mins</span> <span>• All skin types</span></div>
+        <div class="price-row"><div class="price">₹1,999 <small>₹3,199</small></div><button class="add-btn" onclick="addService(this,'HydraGlow Facial',1999)">Add +</button></div>
+      </div>
+      <div class="service-card">
+        <div class="svc-top"><h4>O3+ Bridal Radiance <span>Bridal grade • Aalam</span></h4></div>
+        <p>Whitening + de-tan peel, gold mask & lymphatic massage for luminous tone.</p>
+        <div class="meta"><span><i class="fa-regular fa-clock"></i> 75 mins</span></div>
+        <div class="price-row"><div class="price">₹3,499 <small>₹5,499</small></div><button class="add-btn" onclick="addService(this,'O3+ Bridal Facial',3499)">Add +</button></div>
+      </div>
+      <div class="service-card">
+        <div class="svc-top"><h4>Charcoal De-Tan Clean-up <span>For him & her</span></h4></div>
+        <p>Pollution detox, blackhead lift & matte finish. Ideal pre-event.</p>
+        <div class="meta"><span><i class="fa-regular fa-clock"></i> 40 mins</span></div>
+        <div class="price-row"><div class="price">₹999 <small>₹1,499</small></div><button class="add-btn" onclick="addService(this,'De-Tan Clean-up',999)">Add +</button></div>
+      </div>
+      <div class="service-card">
+        <div class="svc-top"><h4>24K Gold Revival Facial <span>Luxury</span></h4></div>
+        <p>Nano-gold leaf, collagen boost & sculpting massage for firmness.</p>
+        <div class="meta"><span><i class="fa-regular fa-clock"></i> 70 mins</span></div>
+        <div class="price-row"><div class="price">₹2,999 <small>₹4,799</small></div><button class="add-btn" onclick="addService(this,'24K Gold Facial',2999)">Add +</button></div>
+      </div>
+      <div class="service-card">
+        <div class="svc-top"><h4>Acne Control Medi-Facial <span>Dermat tested</span></h4></div>
+        <p>Salicylic peel, blue light & calming mask to reduce active acne.</p>
+        <div class="meta"><span><i class="fa-regular fa-clock"></i> 55 mins</span></div>
+        <div class="price-row"><div class="price">₹1,799 <small>₹2,799</small></div><button class="add-btn" onclick="addService(this,'Acne Medi-Facial',1799)">Add +</button></div>
+      </div>
+      <div class="service-card">
+        <div class="svc-top"><h4>Body Polishing Ritual <span>Full body</span></h4></div>
+        <p>Sugar exfoliation, ubtan pack & shea glaze for silk skin.</p>
+        <div class="meta"><span><i class="fa-regular fa-clock"></i> 90 mins</span></div>
+        <div class="price-row"><div class="price">₹3,999 <small>₹6,499</small></div><button class="add-btn" onclick="addService(this,'Body Polishing',3999)">Add +</button></div>
+      </div>
+    </div>
+
+    <!-- Nail -->
+    <div id="tab-nail" class="service-grid" style="display:none">
+      <div class="service-card">
+        <div class="svc-top"><h4>Gel Extensions + Art <span>Farid • Nail Atelier</span></h4></div>
+        <p>Extension, shape & custom art. Chip-free 21 days. 80+ shades.</p>
+        <div class="meta"><span><i class="fa-regular fa-clock"></i> 90 mins</span></div>
+        <div class="price-row"><div class="price">₹1,799 <small>₹2,799</small></div><button class="add-btn" onclick="addService(this,'Gel Extensions',1799)">Add +</button></div>
+      </div>
+      <div class="service-card">
+        <div class="svc-top"><h4>Classic Gel Polish <span>Hands / Feet</span></h4></div>
+        <p>Cuticle care, shaping & gel lacquer with high-gloss top.</p>
+        <div class="meta"><span><i class="fa-regular fa-clock"></i> 45 mins</span></div>
+        <div class="price-row"><div class="price">₹799 <small>₹1,199</small></div><button class="add-btn" onclick="addService(this,'Gel Polish',799)">Add +</button></div>
+      </div>
+      <div class="service-card">
+        <div class="svc-top"><h4>Luxe Manicure + Pedicure <span>Crystal spa</span></h4></div>
+        <p>Soak, scrub, mask & massage with crystal soak & paraffin.</p>
+        <div class="meta"><span><i class="fa-regular fa-clock"></i> 75 mins</span></div>
+        <div class="price-row"><div class="price">₹1,499 <small>₹2,299</small></div><button class="add-btn" onclick="addService(this,'Luxe Mani-Pedi',1499)">Add +</button></div>
+      </div>
+      <div class="service-card">
+        <div class="svc-top"><h4>Nail Refill & Repair <span>Maintenance</span></h4></div>
+        <p>In-fill, re-shape & art refresh for extended wear.</p>
+        <div class="meta"><span><i class="fa-regular fa-clock"></i> 60 mins</span></div>
+        <div class="price-row"><div class="price">₹999 <small>₹1,499</small></div><button class="add-btn" onclick="addService(this,'Nail Refill',999)">Add +</button></div>
+      </div>
+      <div class="service-card">
+        <div class="svc-top"><h4>Bridal Nail Curation <span>3D art • Chrome</span></h4></div>
+        <p>Bespoke bridal set with stones, chrome & hand-painted detail.</p>
+        <div class="meta"><span><i class="fa-regular fa-clock"></i> 120 mins</span></div>
+        <div class="price-row"><div class="price">₹2,499 <small>₹3,999</small></div><button class="add-btn" onclick="addService(this,'Bridal Nails',2499)">Add +</button></div>
+      </div>
+      <div class="service-card" style="border-color:var(--gold);background:linear-gradient(135deg, rgba(212,175,55,0.12), transparent)">
+        <div class="svc-top"><h4>Express Mini Mani <span>15-min rescue</span></h4></div>
+        <p>Quick shape, buff & polish — perfect between meetings.</p>
+        <div class="meta"><span><i class="fa-regular fa-clock"></i> 20 mins</span></div>
+        <div class="price-row"><div class="price">₹399 <small>₹599</small></div><button class="add-btn" onclick="addService(this,'Mini Mani',399)">Add +</button></div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:16px">
+      <button class="btn-gold" onclick="openBooking()">Proceed to Checkout — 35% Off Applied <i class="fa-solid fa-arrow-right"></i></button>
+      <p style="font-size:11px;color:var(--muted);margin-top:8px">Secure UPI / Card checkout • Instant confirmation on WhatsApp</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="gallery-head">
+      <div>
+        <div class="eyebrow"><i class="fa-solid fa-camera"></i> Step Inside The Black Dahlia</div>
+        <h3>Where Light Becomes <span style="color:var(--gold);font-style:italic;font-family:'Cormorant Garamond',serif;font-weight:300">Architecture</span></h3>
+      </div>
+      <p>Real photos from our Andheri West ateliers — brass-framed product walls, backlit geometric mirrors, and perforated jaali that filters daylight into gilded shards.</p>
+    </div>
+
+    <div class="masonry">
+      <div class="m-item" style="height:380px"><img src="https://www.designarena.ai/u/dc19cd71-572e-402c-92e2-286ea6cd9352" style="height:100%;object-fit:cover" alt="Salon facade arch"><div class="m-cap"><strong>Signature Jaali Arch • Entrance</strong><span>Full-height perforated brass screen — Andheri West icon</span></div></div>
+      <div class="m-item" style="height:260px"><img src="https://www.designarena.ai/u/f787cb58-4953-4e51-bf5a-b0855915d80e" style="height:100%;object-fit:cover" alt="Interior stations"><div class="m-cap"><strong>Gilded Stations</strong><span>Geometric mirrors with ambient LED halo</span></div></div>
+      <div class="m-item" style="height:340px"><img src="https://www.designarena.ai/u/023c4ee2-f11b-4b8b-97bb-403570a4386f" style="height:100%;object-fit:cover" alt="Hero styling area"><div class="m-cap"><strong>Atelier Floor</strong><span>Velvet obsidian + brass pendant constellation</span></div></div>
+      <div class="m-item" style="height:300px"><img src="https://www.designarena.ai/u/b519f6df-ec82-4130-b44e-ff2ec1f46bcd" style="height:100%;object-fit:cover" alt="Product display"><div class="m-cap"><strong>Pro Product Library</strong><span>L'Oréal · Schwarzkopf · Olaplex curated wall</span></div></div>
+      <div class="m-item" style="height:320px"><img src="https://www.designarena.ai/u/22b1b83d-0a47-4b92-9b09-3d0b713ad694" style="height:100%;object-fit:cover" alt="Wash area"><div class="m-cap"><strong>Wash Ritual Bay</strong><span>Reclined comfort with warm brass lighting</span></div></div>
+      <div class="m-item" style="height:280px"><img src="https://www.designarena.ai/u/38f7263a-09c4-4e87-a4b9-0d816e2406da" style="height:100%;object-fit:cover" alt="Detail corner"><div class="m-cap"><strong>Detail Corner</strong><span>High-contrast gold framing & foliage accent</span></div></div>
+      <div class="m-item" style="height:360px"><img src="https://www.designarena.ai/u/65304ff6-1be8-432b-8b09-e6726cb21229" style="height:100%;object-fit:cover" alt="Salon lighting"><div class="m-cap"><strong>Ambient Noir</strong><span>Soft neon-glow drop shadows — night allure</span></div></div>
+    </div>
+
+    <div style="display:flex;justify-content:center;margin-top:18px;gap:10px;flex-wrap:wrap">
+      <span style="font-size:11px;color:var(--muted);border:1px solid var(--border);padding:8px 12px;background:rgba(255,255,255,0.02)"><i class="fa-solid fa-location-dot" style="color:var(--gold)"></i> Shot on location — Millat Nagar & Lokhandwala Complex</span>
+      <button class="btn-outline" style="padding:8px 14px" onclick="openBooking()"><i class="fa-solid fa-calendar-check"></i> Book a Tour Visit — Free</button>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATIONS -->
+<section class="locations" id="locations">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Two Ateliers • One Gothic-Luxe Standard</div>
+      <h3>Andheri West, Mumbai</h3>
+      <p>Choose your closest atelier. Same stylists, same gold-standard hygiene, same 35% instant booking privilege.</p>
+    </div>
+
+    <div class="loc-grid">
+      <!-- Millat Nagar -->
+      <div class="loc-card">
+        <div class="loc-img">
+          <img src="https://www.designarena.ai/u/b519f6df-ec82-4130-b44e-ff2ec1f46bcd" alt="Millat Nagar salon interior">
+          <span class="loc-badge"><i class="fa-solid fa-crown"></i> Flagship • Millat Nagar</span>
+          <span style="position:absolute;bottom:10px;right:10px;background:#0B0B0B;border:1px solid var(--gold);color:var(--gold);font-size:10px;padding:5px 8px;font-weight:800;letter-spacing:0.08em"><span class="live-dot" style="display:inline-block;width:6px;height:6px;vertical-align:middle;margin-right:4px"></span> Open Now</span>
+        </div>
+        <div class="loc-body">
+          <h4><i class="fa-solid fa-location-dot"></i> Millat Nagar Outlet</h4>
+          <p class="addr">Shop No. 4 & 5, Ground Floor, Al-Noor Heights, Millat Nagar Road, Near Millat Nagar Circle, Opposite Good Shepherd Church, Andheri West, Mumbai — 400058</p>
+          <div class="hours"><span><i class="fa-regular fa-clock" style="color:var(--gold)"></i> 10:00 AM — 09:30 PM (All Days) • Last appointment 08:30 PM</span> <b>Open Now</b></div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;font-size:11px;color:var(--muted)">
+            <span><i class="fa-solid fa-phone" style="color:var(--gold)"></i> +91 81045 67290</span>
+            <span>•</span>
+            <span><i class="fa-solid fa-phone" style="color:var(--gold)"></i> +91 81045 67291</span>
+          </div>
+          <div class="loc-actions" style="margin-top:12px">
+            <button class="btn-gold" onclick="openMaps('millat')"><i class="fa-solid fa-map-location-dot"></i> Open in Google Maps App</button>
+            <a href="tel:+918104567290" class="btn-outline"><i class="fa-solid fa-phone"></i> Call</a>
+          </div>
+          <a href="#" class="map-link" onclick="openMaps('millat');return false">View on map • 4.9 ★ (1,842 reviews) <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <!-- Lokhandwala -->
+      <div class="loc-card">
+        <div class="loc-img">
+          <img src="https://www.designarena.ai/u/22b1b83d-0a47-4b92-9b09-3d0b713ad694" alt="Lokhandwala salon interior">
+          <span class="loc-badge" style="background:#0B0B0B;color:var(--gold);border:1px solid var(--gold)">Lokhandwala Complex</span>
+          <span style="position:absolute;bottom:10px;right:10px;background:#0B0B0B;border:1px solid var(--gold);color:var(--gold);font-size:10px;padding:5px 8px;font-weight:800;letter-spacing:0.08em"><span class="live-dot" style="display:inline-block;width:6px;height:6px;vertical-align:middle;margin-right:4px"></span> Open Now</span>
+        </div>
+        <div class="loc-body">
+          <h4><i class="fa-solid fa-location-dot"></i> Lokhandwala Complex Outlet</h4>
+          <p class="addr">Shop No. 12, Samarth Vaibhav CHS, Lokhandwala Complex Road, Near Lokhandwala Market, Above Natural Ice Cream, Andheri West, Mumbai — 400053</p>
+          <div class="hours"><span><i class="fa-regular fa-clock" style="color:var(--gold)"></i> 10:00 AM — 09:30 PM (All Days) • Last appointment 08:30 PM</span> <b>Open Now</b></div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;font-size:11px;color:var(--muted)">
+            <span><i class="fa-solid fa-phone" style="color:var(--gold)"></i> +91 81045 67292</span>
+            <span>•</span>
+            <span><i class="fa-solid fa-phone" style="color:var(--gold)"></i> +91 81045 67293</span>
+          </div>
+          <div class="loc-actions" style="margin-top:12px">
+            <button class="btn-gold" onclick="openMaps('lokhandwala')"><i class="fa-solid fa-map-location-dot"></i> Open in Google Maps App</button>
+            <a href="tel:+918104567292" class="btn-outline"><i class="fa-solid fa-phone"></i> Call</a>
+          </div>
+          <a href="#" class="map-link" onclick="openMaps('lokhandwala');return false">View on map • 4.8 ★ (1,005 reviews) <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:14px;border:1px solid var(--border);background:rgba(255,255,255,0.02);padding:12px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <span style="font-size:11px;color:var(--muted)"><i class="fa-solid fa-triangle-exclamation" style="color:var(--gold)"></i> Walk-ins welcome subject to seat availability. <b style="color:var(--text)">Online booking secures 35% off + guaranteed chair.</b></span>
+      <button class="btn-gold" style="padding:8px 14px;font-size:11px" onclick="openBooking()">Check Live Availability</button>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="reviews">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow"><i class="fa-solid fa-star"></i> Social Proof • Google & Instagram Verified</div>
+      <h3>Clients on Aalam, Haroon & Farid</h3>
+      <p>Stylist-tagged reviews — so you book the right hands, every time.</p>
+    </div>
+
+    <div class="test-grid">
+      <div class="quote-card">
+        <div class="quote-top">
+          <div class="avatar"><img src="https://i.pravatar.cc/120?img=5"></div>
+          <div><strong>Sneha Kapoor • Andheri West</strong><span>Balayage by Haroon • 2 days ago</span></div>
+        </div>
+        <div class="stars-sm">★★★★★</div>
+        <p>“Haroon understood my Pinterest references instantly. The balayage is so seamless — no harsh lines, grows out beautifully. The brass lighting there makes the final reveal magical.”</p>
+        <span class="stylist"><i class="fa-solid fa-scissors"></i> Stylist: Haroon — Hair Color Master</span>
+      </div>
+      <div class="quote-card">
+        <div class="quote-top">
+          <div class="avatar"><img src="https://i.pravatar.cc/120?img=9"></div>
+          <div><strong>Rahul Mehta • Lokhandwala</strong><span>Precision Cut by Aalam • 1 week ago</span></div>
+        </div>
+        <div class="stars-sm">★★★★★</div>
+        <p>“Aalam is a magician with scissors. My layers finally have movement without losing volume. Hygiene is top-notch — fresh cape, sterilized tools. Will not go anywhere else.”</p>
+        <span class="stylist"><i class="fa-solid fa-scissors"></i> Stylist: Aalam — Cut & Finish Pro</span>
+      </div>
+      <div class="quote-card">
+        <div class="quote-top">
+          <div class="avatar"><img src="https://i.pravatar.cc/120?img=26"></div>
+          <div><strong>Alisha D'Souza • Millat Nagar</strong><span>Gel Extensions by Farid • 4 days ago</span></div>
+        </div>
+        <div class="stars-sm">★★★★★</div>
+        <p>“Farid’s nail art is editorial-level. Got chrome French tips that lasted 3 weeks without a chip. The salon vibe itself feels like a luxury boutique — obsessed!”</p>
+        <span class="stylist"><i class="fa-solid fa-wand-magic-sparkles"></i> Stylist: Farid — Nail Atelier Lead</span>
+      </div>
+      <div class="quote-card">
+        <div class="quote-top">
+          <div class="avatar"><img src="https://i.pravatar.cc/120?img=33"></div>
+          <div><strong>Karan & Priya • Couple package</strong><span>Haroon + Farid • Yesterday</span></div>
+        </div>
+        <div class="stars-sm">★★★★★</div>
+        <p>“Booked the couple combo — his cut by Haroon, her hydra facial + nails by Farid. Synchronized appointments, we walked out together. 35% off made it insanely worth it.”</p>
+        <span class="stylist"><i class="fa-solid fa-heart"></i> Duo: Haroon & Farid</span>
+      </div>
+      <div class="quote-card">
+        <div class="quote-top">
+          <div class="avatar"><img src="https://i.pravatar.cc/120?img=16"></div>
+          <div><strong>Zoya Khan • Bridal</strong><span>Bridal trial by Aalam • 5 days ago</span></div>
+        </div>
+        <div class="stars-sm">★★★★★</div>
+        <p>“Aalam designed my bridal hair trial — tried 3 looks patiently until we found the one. The gold-framed mirrors show every angle perfectly. Final day is locked with him.”</p>
+        <span class="stylist"><i class="fa-solid fa-crown"></i> Stylist: Aalam — Bridal Specialist</span>
+      </div>
+      <div class="quote-card" style="background:linear-gradient(135deg, rgba(212,175,55,0.14), rgba(212,175,55,0.02));border-color:var(--gold)">
+        <div style="text-align:center;padding:10px 0">
+          <div style="font-family:'Playfair Display',serif;font-size:42px;line-height:1;color:var(--gold)">4.9</div>
+          <div class="stars-sm" style="justify-content:center;display:flex">★★★★★</div>
+          <p style="text-align:center;font-style:normal;color:var(--muted);font-size:11px">Based on 2,847 Google reviews across both outlets</p>
+          <button class="btn-gold" style="margin-top:12px;width:100%;justify-content:center" onclick="openBooking()">Join 15,000+ Happy Clients</button>
+          <p style="text-align:center;font-style:normal;color:var(--muted);font-size:10px;margin-top:8px;letter-spacing:0.08em;text-transform:uppercase">Verified • Real-time • Stylist-tagged</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:12px">
+          <div class="logo-mark"><i class="fa-solid fa-dharmachakra"></i></div>
+          <div class="logo-text"><h1>THE BLACK DAHLIA</h1><p>UNISEX SALON</p></div>
+        </div>
+        <p>Gothic-Luxe dark noir atelier in Andheri West. Velvet obsidian interiors, muted gold halos, and Mumbai’s most precise hands — Aalam, Haroon & Farid.</p>
+        <div style="display:flex;gap:8px;margin-top:12px">
+          <a href="#" style="width:32px;height:32px;border:1px solid var(--border);display:grid;place-items:center"><i class="fa-brands fa-instagram" style="color:var(--gold)"></i></a>
+          <a href="#" style="width:32px;height:32px;border:1px solid var(--border);display:grid;place-items:center"><i class="fa-brands fa-facebook-f" style="color:var(--gold)"></i></a>
+          <a href="#" style="width:32px;height:32px;border:1px solid var(--border);display:grid;place-items:center"><i class="fa-brands fa-google" style="color:var(--gold)"></i></a>
+          <a href="#" style="width:32px;height:32px;border:1px solid var(--border);display:grid;place-items:center"><i class="fa-brands fa-whatsapp" style="color:var(--gold)"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Ateliers</h5>
+        <ul>
+          <li><a href="#locations">Millat Nagar — Flagship</a></li>
+          <li><a href="#locations">Lokhandwala Complex</a></li>
+          <li><a href="#" onclick="openMaps('millat');return false">Get Directions • Millat Nagar</a></li>
+          <li><a href="#" onclick="openMaps('lokhandwala');return false">Get Directions • Lokhandwala</a></li>
+          <li><span style="color:var(--muted)">10AM - 9:30PM • All Days</span></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Signature Services</h5>
+        <ul>
+          <li><a href="#services">Haircut • Color • Balayage</a></li>
+          <li><a href="#services">Keratin Botox • Hair Spa</a></li>
+          <li><a href="#services">HydraGlow • O3+ • 24K Gold</a></li>
+          <li><a href="#services">Gel Extensions • Mani-Pedi</a></li>
+          <li><a href="#services">Bridal & Groom Packages</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Instant Booking</h5>
+        <p style="font-size:11px;letter-spacing:0.06em">Claim 35% off when you book online. UPI / Card / Cash - single-step checkout.</p>
+        <button class="btn-gold" style="width:100%;justify-content:center;margin-top:10px" onclick="openBooking()">Claim 35% Off Instant Slot</button>
+        <p style="font-size:11px;margin-top:8px"><i class="fa-solid fa-phone" style="color:var(--gold)"></i> +91 81045 67290 / +91 81045 67292</p>
+        <p style="font-size:11px"><i class="fa-solid fa-envelope" style="color:var(--gold)"></i> hello@blackdahliasalon.in</p>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 2025 The Black Dahlia Unisex Salon • Andheri West, Mumbai. Not just a salon — an atelier.</span>
+      <span style="display:flex;gap:14px"><a href="#">Privacy</a> <a href="#">Terms</a> <a href="#">Refund</a> <span style="color:var(--gold)">Made with Noir & Gold</span></span>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Widget -->
+<div class="wa-wrap">
+  <div class="wa-bubble" id="waBubble">
+    <div style="flex:1">
+      <div style="display:flex;align-items:center;gap:10px">
+        <div class="wa-icon"><i class="fa-brands fa-whatsapp"></i></div>
+        <div>
+          <strong>Stylist Online - Chat & Book Instantly</strong>
+          <p>Aalam is online • Avg. reply <b style="color:#25D366">47 seconds</b></p>
+        </div>
+      </div>
+      <div style="background:#0E0E0E;border:1px solid var(--border);padding:8px;margin-top:8px;font-size:11px;color:var(--muted);line-height:1.5">
+        Hi! Want the 35% off locked? Tell me your outlet & service — I’ll hold your chair. 💛
+      </div>
+      <div class="wa-actions">
+        <button class="btn-outline" style="flex:1;padding:9px;font-size:11px" onclick="openBooking()">Book Slot</button>
+        <button class="btn-gold" style="flex:1;padding:9px;font-size:11px;justify-content:center" onclick="openWhatsApp()"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</button>
+      </div>
+    </div>
+    <button onclick="toggleWA(false)" style="width:28px;height:28px;border:1px solid var(--border);background:transparent;color:var(--muted);display:grid;place-items:center;flex-shrink:0"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <div style="position:relative">
+    <div class="wa-label" id="waLabel"><span></span> Stylist Online - Chat & Book Instantly</div>
+    <button class="wa-btn" onclick="toggleWA()" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></button>
+  </div>
+</div>
+
+<!-- Booking / Checkout Modal -->
+<div class="modal" id="bookingModal">
+  <div class="modal-card">
+    <div class="modal-head">
+      <div>
+        <div class="eyebrow" style="margin-bottom:8px"><span class="live-dot" style="width:6px;height:6px"></span> Unified Checkout • 35% Off Auto-Applied</div>
+        <h3>Secure Your Chair <span style="color:var(--gold);font-style:italic;font-weight:400">in 60 Seconds</span></h3>
+        <p>Single-step UPI or Card checkout • Instant WhatsApp confirmation • Free reschedule up to 3h before</p>
+      </div>
+      <button class="close-btn" onclick="closeBooking()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div class="modal-left">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <h4 style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold)">Your Details</h4>
+        <span style="font-size:10px;color:var(--muted);border:1px solid var(--border);padding:4px 6px"><i class="fa-solid fa-lock" style="color:var(--gold)"></i> 256-bit Secure</span>
+      </div>
+      <div class="form-grid">
+        <div class="field"><label>Full Name *</label><input id="custName" placeholder="e.g., Priya Sharma"></div>
+        <div class="field"><label>Phone (WhatsApp) *</label><input id="custPhone" placeholder="+91 98xxxxxxxx"></div>
+        <div class="field"><label>Select Outlet *</label><select id="custOutlet"><option value="Millat Nagar">Millat Nagar — Flagship</option><option value="Lokhandwala Complex">Lokhandwala Complex</option></select></div>
+        <div class="field"><label>Preferred Stylist</label><select id="custStylist"><option>Any Available (Fastest)</option><option>Aalam — Cut / Bridal</option><option>Haroon — Color Master</option><option>Farid — Nail Atelier</option></select></div>
+        <div class="field"><label>Date *</label><input type="date" id="custDate"></div>
+        <div class="field"><label>Time Slot *</label><select id="custTime"><option>10:30 AM — First slot</option><option>12:00 PM</option><option>02:00 PM</option><option>04:00 PM</option><option>06:00 PM</option><option>07:30 PM — Last chair</option></select></div>
+        <div class="field full"><label>Add Services (you can add more from menu)</label><select id="servicePicker" onchange="pickerAdd(this)"><option value="">+ Quick add service…</option><option value="Precision Haircut|999">Precision Haircut — ₹999</option><option value="Global Hair Color|2999">Global Color — ₹2,999</option><option value="Balayage Highlights|6499">Balayage — ₹6,499</option><option value="Keratin Botox|4999">Keratin Botox — ₹4,999</option><option value="HydraGlow Facial|1999">HydraGlow — ₹1,999</option><option value="Gel Extensions|1799">Gel Extensions — ₹1,799</option><option value="Luxe Mani-Pedi|1499">Luxe Mani-Pedi — ₹1,499</option></select></div>
+      </div>
+
+      <div style="margin-top:14px">
+        <h4 style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:8px">Pay With</h4>
+        <div class="pay-tabs">
+          <button class="pay-tab active" id="tabUpi" onclick="switchPay('upi')"><i class="fa-solid fa-mobile-screen"></i> UPI</button>
+          <button class="pay-tab" id="tabCard" onclick="switchPay('card')"><i class="fa-regular fa-credit-card"></i> Card</button>
+        </div>
+        <div id="panelUpi" class="pay-panel active">
+          <div class="field"><label>UPI ID</label><input id="upiId" placeholder="name@paytm / 98xxxxxx@upi"></div>
+          <div style="display:flex;gap:6px;margin-top:8px">
+            <span style="border:1px solid var(--border);padding:6px 8px;font-size:10px;font-weight:800;letter-spacing:0.06em;background:rgba(255,255,255,0.04)"><i class="fa-brands fa-google-pay" style="color:var(--gold)"></i> GPay</span>
+            <span style="border:1px solid var(--border);padding:6px 8px;font-size:10px;font-weight:800;letter-spacing:0.06em;background:rgba(255,255,255,0.04)"><i class="fa-solid fa-mobile" style="color:var(--gold)"></i> PhonePe</span>
+            <span style="border:1px solid var(--border);padding:6px 8px;font-size:10px;font-weight:800;letter-spacing:0.06em;background:rgba(255,255,255,0.04)">Paytm</span>
+            <span style="border:1px solid var(--border);padding:6px 8px;font-size:10px;font-weight:800;letter-spacing:0.06em;background:rgba(255,255,255,0.04)">BHIM</span>
+          </div>
+          <p style="font-size:10px;color:var(--muted);margin-top:6px">You’ll get a collect request on your UPI app. Approve to confirm instantly.</p>
+        </div>
+        <div id="panelCard" class="pay-panel">
+          <div class="field"><label>Card Number</label><input id="cardNum" placeholder="4242 4242 4242 4242" maxlength="19"></div>
+          <div class="form-grid" style="margin-top:8px">
+            <div class="field"><label>Expiry (MM/YY)</label><input placeholder="08/28"></div>
+            <div class="field"><label>CVV</label><input placeholder="123" maxlength="4"></div>
+          </div>
+          <p style="font-size:10px;color:var(--muted);margin-top:6px">Visa • Mastercard • RuPay • Amex — 3D Secure verified.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-right">
+      <h4 style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold)">Order Summary</h4>
+      <div style="display:flex;align-items:center;gap:8px;margin:8px 0;padding:8px;background:rgba(212,175,55,0.08);border:1px solid var(--border2);font-size:11px">
+        <i class="fa-solid fa-stopwatch" style="color:var(--gold)"></i> <span>Offer locks for</span> <b id="modalTimer" style="font-family:'JetBrains Mono',monospace">02:14:29</b> <span style="margin-left:auto;background:var(--gold);color:#0B0B0B;padding:3px 6px;font-weight:800;font-size:10px">35% OFF</span>
+      </div>
+      <div class="order-list" id="orderList">
+        <div style="text-align:center;padding:14px;color:var(--muted);font-size:12px" id="emptyCart">No services added yet.<br><span style="font-size:11px">Tap “Add +” on any treatment — they appear here with 35% off.</span></div>
+      </div>
+      <div class="order-total" id="orderTotal" style="display:none">
+        <span>Total Payable <span style="font-weight:400;color:var(--muted);font-size:11px">• after 35% off</span></span>
+        <span id="totalAmount">₹0</span>
+      </div>
+      <div style="font-size:11px;color:var(--muted);margin-top:8px;display:flex;justify-content:space-between"><span>Subtotal</span><span id="subTotal">₹0</span></div>
+      <div style="font-size:11px;color:#00D26A;display:flex;justify-content:space-between;font-weight:700"><span>You Save (35%)</span><span id="saveAmount">-₹0</span></div>
+
+      <button class="btn-gold" style="width:100%;justify-content:center;margin-top:14px;padding:14px" onclick="confirmPay()"><i class="fa-solid fa-lock"></i> Pay & Confirm Booking • Secure</button>
+      <div class="secure"><i class="fa-solid fa-shield-halved"></i> Encrypted • No OTP sharing needed • Instant refund on no-show protection</div>
+      <div style="border:1px dashed var(--border);padding:10px;margin-top:12px;background:rgba(255,255,255,0.02)">
+        <p style="font-size:11px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold)"><i class="fa-solid fa-gift"></i> What you get instantly</p>
+        <ul style="font-size:11px;color:var(--muted);margin-top:6px;line-height:1.6;list-style:none">
+          <li>✓ WhatsApp ticket with stylist + chair number</li>
+          <li>✓ Google Calendar invite + map pin</li>
+          <li>✓ Free reschedule up to 3 hrs before</li>
+        </ul>
+      </div>
+      <p style="font-size:10px;color:var(--muted2);text-align:center;margin-top:10px">By confirming, you agree to our booking terms. Need help? <a href="#" onclick="openWhatsApp();return false" style="color:var(--gold)">Chat on WhatsApp</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"><i class="fa-solid fa-circle-check"></i> <span id="toastMsg">Added to booking</span></div>
+
+<script>
+let cart = [];
+let payMode = 'upi';
+let waOpen = false;
+let countdownSec = 2*3600 + 14*60 + 33;
+
+// mobile nav
+document.getElementById('hamburger').addEventListener('click', ()=>{
+  document.getElementById('mobileNav').classList.toggle('open');
+});
+function closeMobile(){document.getElementById('mobileNav').classList.remove('open')}
+
+// location dropdown
+const locToggle = document.getElementById('locToggle');
+const locDropdown = document.getElementById('locDropdown');
+locToggle.addEventListener('click', (e)=>{
+  e.stopPropagation();
+  locDropdown.classList.toggle('open');
+});
+document.querySelectorAll('.loc-option').forEach(el=>{
+  el.addEventListener('click', ()=>{
+    const txt = el.dataset.loc;
+    locToggle.querySelector('.txt').textContent = txt;
+    locDropdown.classList.remove('open');
+    toast(txt + ' selected • Chairs refreshed');
+    randomSeats();
+  })
+});
+document.addEventListener('click', ()=> locDropdown.classList.remove('open'));
+
+// tabs
+function switchTab(name){
+  document.querySelectorAll('.tab').forEach(t=> t.classList.toggle('active', t.dataset.tab===name));
+  document.getElementById('tab-hair').style.display = name==='hair'?'grid':'none';
+  document.getElementById('tab-skin').style.display = name==='skin'?'grid':'none';
+  document.getElementById('tab-nail').style.display = name==='nail'?'grid':'none';
+}
+
+// pay switch
+function switchPay(mode){
+  payMode=mode;
+  document.getElementById('tabUpi').classList.toggle('active', mode==='upi');
+  document.getElementById('tabCard').classList.toggle('active', mode==='card');
+  document.getElementById('panelUpi').classList.toggle('active', mode==='upi');
+  document.getElementById('panelCard').classList.toggle('active', mode==='card');
+}
+
+// add service
+function addService(btn,name,price){
+  const exists = cart.find(c=>c.name===name);
+  if(exists){ exists.qty++; } else { cart.push({name,price,qty:1})}
+  btn.textContent='Added ✓'; btn.classList.add('added');
+  setTimeout(()=>{btn.textContent='Add +'; btn.classList.remove('added')},1200);
+  renderCart();
+  toast(name + ' added — 35% off applied');
+  // gentle nudge to checkout if first item
+  if(cart.length===1) {
+    const el=document.getElementById('bookingModal');
+    if(!el.classList.contains('open')) { /* don't auto open, just hint */ }
+  }
+}
+function pickerAdd(sel){
+  if(!sel.value) return;
+  const [name,price] = sel.value.split('|');
+  cart.push({name,price:parseInt(price),qty:1});
+  renderCart();
+  toast(name + ' added');
+  sel.value='';
+}
+function removeItem(idx){
+  cart.splice(idx,1);
+  renderCart();
+}
+function renderCart(){
+  const list=document.getElementById('orderList');
+  const empty=document.getElementById('emptyCart');
+  const totalEl=document.getElementById('orderTotal');
+  if(cart.length===0){
+    list.innerHTML='<div style="text-align:center;padding:14px;color:var(--muted);font-size:12px" id="emptyCart">No services added yet.<br><span style="font-size:11px">Tap “Add +” on any treatment — they appear here with 35% off.</span></div>';
+    totalEl.style.display='none';
+    document.getElementById('subTotal').textContent='₹0';
+    document.getElementById('saveAmount').textContent='-₹0';
+    document.getElementById('totalAmount').textContent='₹0';
+    return;
+  }
+  let subtotal=0;
+  let html='';
+  cart.forEach((item,i)=>{
+    const line = item.price*item.qty;
+    subtotal+=line;
+    html+=`<div class="order-item">
+      <div><strong>${item.name}</strong> <span style="color:var(--muted);font-size:11px">×${item.qty}</span><br><span style="font-size:11px;color:var(--muted)">35% off auto-applied</span></div>
+      <div style="text-align:right">
+        <div style="font-weight:800">₹${Math.round(line*0.65).toLocaleString('en-IN')}</div>
+        <div style="font-size:10px;color:var(--muted);text-decoration:line-through">₹${line.toLocaleString('en-IN')}</div>
+        <button onclick="removeItem(${i})" style="font-size:10px;color:#ff6b6b;background:none;border:none;cursor:pointer">Remove</button>
+      </div>
+    </div>`
+  });
+  const save=Math.round(subtotal*0.35);
+  const total=subtotal-save;
+  list.innerHTML=html;
+  totalEl.style.display='flex';
+  document.getElementById('subTotal').textContent='₹'+subtotal.toLocaleString('en-IN');
+  document.getElementById('saveAmount').textContent='-₹'+save.toLocaleString('en-IN');
+  document.getElementById('totalAmount').textContent='₹'+total.toLocaleString('en-IN');
+}
+
+// booking modal
+function openBooking(){
+  document.getElementById('bookingModal').classList.add('open');
+  document.body.style.overflow='hidden';
+  // set default date tomorrow
+  const d=new Date(); d.setDate(d.getDate()+1);
+  const iso=d.toISOString().split('T')[0];
+  const dateInput=document.getElementById('custDate');
+  if(!dateInput.value) dateInput.value=iso;
+  renderCart();
+}
+function closeBooking(){
+  document.getElementById('bookingModal').classList.remove('open');
+  document.body.style.overflow='';
+}
+document.getElementById('bookingModal').addEventListener('click', (e)=>{
+  if(e.target.id==='bookingModal') closeBooking();
+});
+
+// confirm pay
+function confirmPay(){
+  const name=document.getElementById('custName').value.trim();
+  const phone=document.getElementById('custPhone').value.trim();
+  if(!name || !phone){ toast('Please enter name & WhatsApp number'); return; }
+  if(cart.length===0){ toast('Add at least one service to continue'); return; }
+  if(payMode==='upi' && !document.getElementById('upiId').value.trim()){
+    // allow without but warn
+    // toast('Enter UPI ID or switch to Card');
+    // return;
+  }
+  // simulate success
+  const outlet=document.getElementById('custOutlet').value;
+  closeBooking();
+  toast('✓ Booking confirmed for '+name+' • '+outlet+' • Check WhatsApp for ticket');
+  // reset small
+  setTimeout(()=>{
+    // keep cart but could clear
+  },500);
+  // trigger whatsapp bubble
+  setTimeout(()=> toggleWA(true), 900);
+}
+
+// countdown timers
+function fmt(s){
+  const h=Math.floor(s/3600).toString().padStart(2,'0');
+  const m=Math.floor((s%3600)/60).toString().padStart(2,'0');
+  const sec=(s%60).toString().padStart(2,'0');
+  return `${h}:${m}:${sec}`;
+}
+setInterval(()=>{
+  countdownSec = countdownSec>0 ? countdownSec-1 : 2*3600+15*60;
+  const t=fmt(countdownSec);
+  document.getElementById('announceTimer').textContent=t;
+  const cd=document.getElementById('countdown');
+  if(cd) cd.textContent=t;
+  const mt=document.getElementById('modalTimer');
+  if(mt) mt.textContent=t;
+},1000);
+
+// seat availability
+function randomSeats(){
+  const a = 2 + Math.floor(Math.random()*3); //2-4
+  const b = 3 + Math.floor(Math.random()*3); //3-5
+  const txt=`Millat Nagar: <b style="color:#00D26A">${a} Chairs Free</b> • Lokhandwala: <b style="color:#00D26A">${b} Chairs Free</b> • Updated just now`;
+  document.getElementById('seatIndicator').innerHTML=txt;
+  document.getElementById('seatFloat').textContent=`Millat Nagar: ${a} chairs • Lokhandwala: ${b} chairs`;
+}
+setInterval(randomSeats, 7000);
+
+// whatsapp toggle
+function toggleWA(force){
+  if(typeof force==='boolean') waOpen=force; else waOpen=!waOpen;
+  document.getElementById('waBubble').classList.toggle('open', waOpen);
+  document.getElementById('waLabel').style.display = waOpen ? 'none' : '';
+}
+function openWhatsApp(){
+  const msg= encodeURIComponent("Hi Black Dahlia team! I want to claim 35% off. Outlet: "+document.getElementById('custOutlet').value+" | Services: "+ (cart.map(c=>c.name).join(', ')||"Need recommendation")+" | Please hold my chair.");
+  window.open(`https://wa.me/918104567290?text=${msg}`,'_blank');
+  toast('Opening WhatsApp…');
+}
+// auto show WA after 4s
+setTimeout(()=> toggleWA(true), 4000);
+setTimeout(()=> { if(waOpen) toggleWA(false)}, 11000);
+
+// maps
+function openMaps(which){
+  const q = which==='millat'
+    ? 'The Black Dahlia Unisex Salon Millat Nagar Andheri West Mumbai'
+    : 'The Black Dahlia Unisex Salon Lokhandwala Complex Andheri West Mumbai';
+  window.open('https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(q),'_blank');
+  toast('Opening Google Maps…');
+}
+
+// toast
+let toastTimer;
+function toast(msg){
+  const t=document.getElementById('toast');
+  document.getElementById('toastMsg').textContent=msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer=setTimeout(()=> t.classList.remove('show'), 3200);
+}
+
+// card formatting
+document.addEventListener('input', e=>{
+  if(e.target.id==='cardNum'){
+    let v=e.target.value.replace(/\D/g,'').slice(0,16);
+    v=v.replace(/(.{4})/g,'$1 ').trim();
+    e.target.value=v;
+  }
+});
+</script>
+</body>
+</html>
